@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm i && gulp"
+    "start": "npm i && gulp",
+    "build": "cd src && static-i18n -l en -i en -i zh ./ && cd .. && mv src/i18n/views/index_i18n.html ./index_en.html && mv src/i18n/zh/views/index_i18n.html ./index_zh.html"
   },
   "repository": {
     "type": "git",
