@@ -1,46 +1,47 @@
 {
   "menu": {
-    "index": "",
-    "intro": "",
-    "feature": "",
-    "contact": ""
+    "index": "Home",
+    "intro": "Introduction",
+    "feature": "exclusive features",
+    "contact": "contact me"
   },
   "index": {
-    "title": "",
-    "button": ""
+    "title": "build the network brand tool",
+    "button": "Get to know"
   },
-  "intro": {
-    "description": "",
+  "introduction": {
+    "title": "complete electronic business system",
+    "description": "for small and medium-sized customers exclusive e-commerce system, through the layers of the module to create a complete electricity business system, small business large revenue, improve the checkout rate weapon.From now on, through Picklete, Create self-brand Loyal customers, increase user interaction, and create higher revenue. ",
     "items": [{
-      "title": "",
-      "content": ""
+      "title": "small shop gospel",
+      "content": "provide a variety of preferential programs for small and medium customers, shop the first step is to use Picklete electronic business system, create a brand-name website."
     }, {
-      "title": "",
-      "content": ""
+      "title": "multi-payment system",
+      "content": "Exclusive offline payments, combined with third-party payment flow, allowing users to browse all the way to complete the payment to improve the turnover rate."
     }, {
-      "title": "",
-      "content": ""
+      "title": "time-saving is a good helper",
+      "content": "easy to build the official website, blog, electricity business shopping, the Trinity zero time, immediately on the line."
     }]
   },
   "feature": {
-    "title": "",
+    "title": "Almighty shopping cart features",
     "items": [{
-      "hoverName": "",
-      "title": "",
-      "content": ""
+      "hoverName": "Picklete shelves",
+      "title": "all-round electronic business function",
+      "content": "from the order management to marketing module, a complete combination of e - commerce features to meet all the needs of Taiwan 's sellers shop."
     }, {
-      "hoverName": "",
-      "title": "",
-      "content": ""
+      "hoverName": "Picklete Easy Layout",
+      "title": "UX team to create easy-to-use layout",
+      "content": "to build even the elderly can easily buy the interface to improve the turnover rate and return rate, easy to brand the first step."
     }, {
-      "hoverName": "",
-      "title": "",
-      "content": ""
+      "hoverName": "Picklete intimate program",
+      "title": "integration of multiple financial and offline payments",
+      "content": "exclusive offline payments and financial integration, small shops can easily become a network brand."
     }]
   },
   "contact": {
-    "title": "",
-    "emailPlaceholder": "",
-    "button": ""
+    "title": "please contact me",
+    "emailPlaceholder": "Please enter the e-mail contact",
+    "button": "contact me"
   }
 }
