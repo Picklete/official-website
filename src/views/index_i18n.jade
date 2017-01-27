@@ -1,0 +1,137 @@
+extends ./layout/_layout.jade
+
+block content
+  
+  header.c-layout-header.c-layout-header-4.c-bordered.c-layout-header-default-mobile.c-header-transparent-dark(data-minimize-offset='80')
+    .c-navbar
+      .container
+        .c-navbar-wrapper.clearfix
+          .c-brand.c-pull-left
+            a.c-logo(href='index.html')
+              img.c-desktop-logo(src='assets/images/logo.png', alt='JANGO')
+              img.c-desktop-logo-inverse(src='assets/images/logo.png', alt='JANGO')
+              img.c-mobile-logo(src='assets/images/logo.png', alt='JANGO')
+            button.c-hor-nav-toggler(type='button', data-target='.c-mega-menu')
+              span.c-line
+              span.c-line
+              span.c-line
+            button.c-topbar-toggler(type='button')
+              i.fa.fa-ellipsis-v
+            button.c-search-toggler(type='button')
+              i.fa.fa-search
+          form.c-quick-search(action='#')
+            input.form-control(type='text', name='query', placeholder='Type to search...', value='', autocomplete='off')
+            span.c-theme-link ×
+          nav.c-mega-menu.c-mega-menu-dark.c-mega-menu-dark-mobile.c-fonts-uppercase.c-fonts-bold.c-pull-right
+            ul.nav.navbar-nav.c-theme-nav
+              li.c-menu-type-classic.c-active
+                a.c-link.dropdown-toggle(href='#index', data-t='menu.index')
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='#intro', data-t='menu.intro')
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='#feature', data-t='menu.feature')
+              li.c-menu-type-classic
+                a.c-link.dropdown-toggle(href='#joinus', data-t='menu.contact')
+  main#index.c-layout-page
+    section.c-layout-revo-slider.c-layout-revo-slider-11
+      .tp-banner-container.tp-fullscreen.tp-fullscreen-mobile.c-arrow-darken(data-bullets-pos='center')
+        .tp-banner
+          ul
+            li(data-transition='fade', data-slotamount='1', data-masterspeed='1000')
+              img(alt='', src='assets/images/cover-1.jpg', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+              .caption.customin.customout(data-x='center', data-y='center', data-hoffset='', data-voffset='-50', data-speed='500', data-start='1000', data-customin='x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-easing='Back.easeOut', data-splitin='none', data-splitout='none', data-elementdelay='0.1', data-endelementdelay='0.1', data-endspeed='600')
+                h3.c-main-title.c-font-48.c-font-bold.c-font-center.c-font-uppercase.c-font-dark.c-block(data-t='index.title')
+              .to-caption.lft(data-x='center', data-y='center', data-voffset='110', data-speed='900', data-start='2000', data-transform_idle='o:1;', data-transform_in='x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;', data-transform_out='x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;')
+                a.c-action-btn.btn.btn-lg.c-btn-square.c-theme-btn.c-btn-bold.c-btn-uppercase(href='#') Learn More
+              .caption.lft(data-x='center', data-y='center', data-voffset='140', data-speed='900', data-start='2000', data-easing='easeOutExpo')
+                a.c-action-btn.btn.btn-xlg.c-btn-border-1x.c-btn-square.btn-default.c-btn-bold.c-btn-uppercase(href='#joinus', data-t='index.button')
+    section#intro.about-content
+      #about-mokayo
+        h3.c-font-24.c-font-center(data-t='intro.title')
+        span.c-font-36.c-font-white Picklete
+        p.c-font-17.c-font-center(data-t='intro.description')
+    section.feature-content
+      .container-fluid
+        .row
+          .col-xs-12.col-sm-4.c-card
+            span.icon-share
+            h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center(data-t='intro.items.0.title')
+            p.c-font-white.c-font-16(data-t='intro.items.0.content')
+          .col-xs-12.col-sm-4.c-card
+            span.icon-rocket
+            h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center(data-t='intro.items.1.title')
+            p.c-font-white.c-font-16(data-t='intro.items.1.content')
+          .col-xs-12.col-sm-4.c-card
+            span.icon-speedometer
+            h3.c-font-24.c-font-yellow-3.c-font-bold.c-font-center(data-t='intro.items.2.title')
+            p.c-font-white.c-font-16(data-t='intro.items.2.content')
+    section#feature.course-content.c-bg-white
+      .c-content-box.c-size-md
+        #course-title.c-content-title
+          h3.c-center.c-font-bold.c-font-28(data-t='feature.title')
+        .container
+          .c-course-slider(data-slider='owl', data-items='3', data-desktop-items='3', data-tablet-items='2', data-mobile-small-items='1')
+            .owl-carousel.owl-course
+              .item
+                .c-course-detail
+                  .c-caption.c-content-overlay(style="background-image:url('assets/images/image1.png')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white(data-t='feature.items.0.hoverName')
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3(data-t='feature.items.0.title')
+                    .c-date.c-font-20(data-t='feature.items.0.content')
+              .item
+                .c-course-detail
+                  .c-caption.c-content-overlay(style="background-image:url('assets/images/image2.jpg')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white(data-t='feature.items.1.hoverName')
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3(data-t='feature.items.1.title')
+                    .c-date.c-font-20(data-t='feature.items.1.content')
+              .item
+                .c-course-detail
+                  .c-caption.c-content-overlay(style="background-image:url('assets/images/image3.png')")
+                    .c-overlay-wrapper
+                      .c-overlay-content
+                        p.c-font-white(data-t='feature.items.2.hoverName')
+                  .c-body
+                    .c-head.c-font-20.c-font-yellow-3(data-t='feature.items.2.title')
+                    .c-date.c-font-20(data-t='feature.items.2.content')
+
+
+
+    
+    //- BEGIN:CONTENT/SLIDERS/CLIENT-LOGOS-2
+    //- section.parter-content
+    //-   .c-content-box.c-size-sm
+    //-     .c-content-title-1
+    //-       h3.c-center.c-font-bold 合作夥伴
+ 
+    //-   .container.parter-box
+    //-     .row
+    //-       .col-xs-12.col-sm-3
+    //-       .col-xs-12.col-sm-3
+    //-         a(href='http://exma-square.co/' target="_blank")
+    //-           img(src='assets/images/partner-exma.png', alt='EXMA-square.co')
+    //-       .col-xs-12.col-sm-3
+    //-         a(href='http://trunk-studio.com/' target="_blank")
+    //-           img(src='assets/images/partner-trunk.png', alt='')
+                    
+    section#joinus.subscribe-content
+      .c-content-box.c-size-md.c-bg-parallax
+        .container
+          .col-sm-4
+            h3.c-center.c-font-bold.c-font-white.c-font-24
+              i.fa.fa-bolt
+              span(data-t='contact.title')
+          .col-sm-6
+            form(action='http://exma-square.us13.list-manage.com/tweet-subscribe', method='POST')
+              .input-group.input-group-lg
+                input#subId(type='hidden', name='id', value='us13-3cbc77dd061f94042895497df-195b3872c2')
+                input#EMAIL.form-control.c-square.c-font-grey-3.c-border-grey.c-theme(type='text', name='EMAIL', data-attr-t='', placeholder-t='contact.emailPlaceholder', required='')
+                span.input-group-btn
+                  button#email-us.btn.c-theme-btn.c-theme-border.c-btn-square.c-btn-uppercase.c-font-16(type='button', data-t='contact.button')
+
+  include ./partials/_footer

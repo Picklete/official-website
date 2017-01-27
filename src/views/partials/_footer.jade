@@ -6,26 +6,27 @@ footer.c-layout-footer.c-layout-footer-3.c-bg-dark
         .col-md-6
           .c-container.c-first
             .c-content-title-1
-              h3.c-font-bold.c-font-white miiixr
-            
+              h3.c-font-bold.c-font-white Picklete
             ul.c-links
               li
-                a(href='#index') 首頁
-              //- li
-              //-   a(href='http://blog.mokayo.com/') 部落格
+                a(href='#index', data-t='menu.index')
               li
-                a(href='#intro') 介紹
-                span > 
-                a(href='#feature') 獨家功能
+                a(href='#intro', data-t='menu.intro')
               li
-                a(href='#joinus') 與我聯絡
+                a(href='#feature', data-t='menu.feature')
+              li
+                a(href='#joinus', data-t='menu.contact')
             ul.c-address
               li
                 i.icon-envelope.c-theme-font
-                |  we@exma-square.co
+                |  caesar@exma-square.co
               li
                 i.icon-call-end.c-theme-font
+                  a(href="tel:886225620745")
                 |  +886-2-2562-0745
+
+
+
               //- li
               //-   i.icon-pointer.c-theme-font
               //-   |  台北市中山區松江路
@@ -43,13 +44,13 @@ footer.c-layout-footer.c-layout-footer-3.c-bg-dark
         //-             textarea.form-control(rows='5', name='message', placeholder='Write comment here ...')
         //-             button.btn.btn-block.c-btn-grey-2.c-btn-border-1x.c-btn-uppercase.btn-md.c-btn-bold(type='submit') Send
 
-
   .c-postfooter
     .container
       .row
         .col-sm-12.c-col
           p.c-copyright.c-font-grey.c-center
-            | 2016 © <a href="http://www.miiixr.com">miiixr.com</a>
+            | 2016 © 
+            a(href='http://www.miiixr.com', target='_blank') miiixr.com
             span.c-font-grey-3 All Rights Reserved.
 
 //- BEGIN: LAYOUT/FOOTERS/GO2TOP

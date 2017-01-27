@@ -8,6 +8,7 @@ var gulp         = require('gulp'),
     browserSync  = require('browser-sync'),
     reload       = browserSync.reload,
     argv         = require('yargs').argv,
+    rename       = require('gulp-rename'),
     del          = require('del');
 
 gulp.task('styles', function() {  
@@ -22,12 +23,27 @@ gulp.task('styles', function() {
 });
 
 gulp.task('templates', function() {
-  return gulp.src('src/views/*.jade')
-    .pipe($.plumber())
-    .pipe($.jade({
-      pretty: true
-    }))
-    .pipe(gulp.dest('./'))
+
+  return Promise.all([
+    new Promise(function(resolve, reject) {
+
+      gulp.src('src/views/*.jade')
+        .pipe($.plumber())
+        .on('error', reject)
+        .pipe($.jade({
+          pretty: true
+        }))
+        .pipe(gulp.dest('./'))
+        .on('end', resolve)  
+    })
+  ]).then(function () {
+    // Other actions
+    gulp.src('./index_i18n.html')
+      // .pipe(rename('index_i18n.html')) 
+      .pipe(gulp.dest('./src'));
+
+  });  
+  
     // .pipe(notify({ message: 'Templates task complete' }));
 });
 
@@ -44,8 +60,8 @@ gulp.task('images', function() {
     // .pipe(notify({ message: 'Images task complete' }));
 });
 
-gulp.task('clean', function() {  
-  return del(['./assets/stylesheets/*.css', './assets/scripts/*.js'], ['./assets/images/**/*']);
+gulp.task('clean', function() { 
+  return del.sync(['./*.html'], ['./assets/stylesheets/*.css', './assets/scripts/*.js'], ['./assets/images/**/*']);
 });
 
 gulp.task('browser-sync', function() {
@@ -58,7 +74,7 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('build', ['styles', 'templates', 'scripts', 'images']);
+gulp.task('build', ['clean', 'styles', 'templates', 'scripts', 'images']);
 
 gulp.task('serve', ['clean', 'build', 'browser-sync'], function () {
   gulp.watch('src/assets/scss/**/*.{scss,sass}',['styles', reload]);
