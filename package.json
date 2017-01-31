@@ -4,35 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build && cd src && static-i18n -l en -i en -i zh ./ && cd .. && mv src/i18n/index_i18n.html ./index_en.html && mv src/i18n/zh/index_i18n.html ./index_zh.html"
+    "start": "./node_modules/gulp/bin/gulp.js",
+    "build": "./node_modules/gulp/bin/gulp.js build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miiixr/mokayo.git"
+    "url": "git+https://github.com/Picklete/official-website.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/miiixr/official-website/issues"
+    "url": "https://github.com/Picklete/official-website/issues"
   },
-  "homepage": "https://github.com/miiixr/official-website",
+  "homepage": "https://github.com/Picklete/official-website",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.3.2",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.2.0",
-    "gulp-minify-css": "^1.2.4",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.0.6",
+    "gulp-shell": "^0.5.2",
+    "gulp-static-i18n-html": "^0.1.1",
     "gulp-uglify": "^1.5.3",
     "yargs": "^4.3.2"
   },
-  "dependencies": {
-    "gulp-rename": "^1.2.2"
-  }
+  "dependencies": {}
 }
