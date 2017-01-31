@@ -1,4 +1,5 @@
 .about-content #about-mokayo h3,.course-content .c-course-slider .c-course-detail .c-body .c-head{border-bottom:1px solid #c5b96b}
+body:not(.c-page-on-scroll) header .c-theme-nav li.c-active>a:not(.btn),body:not(.c-page-on-scroll) header .c-theme-nav li:hover>a:not(.btn){color:gray!important}
 .c-layout-revo-slider{position:relative;z-index:2;box-shadow:2px 4px 10px rgba(51,51,51,.5)}
 .about-content{background:#fff}
 .about-content #about-mokayo{background-color:rgba(242,193,0,.7);box-shadow:0 4px 10px rgba(51,51,51,.5);width:82%;margin:0 auto;padding:40px 60px}
@@ -30,6 +31,7 @@
 .parter-content .parter-box img:hover{opacity:1;transition:opacity .3s ease-in-out}
 .subscribe-content{padding:20px 0}
 .subscribe-content i{color:#f2c100;margin-right:10px}
+footer .c-copyright a{margin:0 10px;color:#c5b96b}
 @media (max-width:991px){.course-content .c-more{display:block;width:auto;margin:60px auto 0}
 }
 @media (min-width:768px){.feature-content>.container-fluid{display:table;border-spacing:20px}

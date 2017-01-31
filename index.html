@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      var currentUserLanguage = navigator.language || navigator.userLanguage;
+      if (currentUserLanguage.match('zh-') !== null) {
+        window.location.href = '/index_zh.html';
+      } else {
+        window.location.href = '/index_en.html';
+      }
+    </script>
+  </head>
+</html>

@@ -2,6 +2,13 @@ $yellow-c: #f2c100;
 
 @import '_settings';
 
+body:not(.c-page-on-scroll) header .c-theme-nav li {
+  &.c-active>a:not(.btn),
+  &:hover>a:not(.btn) {
+    color: gray !important;
+  }
+}
+
 .c-layout-revo-slider{
   position: relative;
   z-index: 2;
@@ -36,22 +43,22 @@ $yellow-c: #f2c100;
   box-shadow:0px 4px 10px rgba(#333,0.3);
   position: relative;
   z-index: 1;
-  
+
   >.container-fluid{
     >.row{
       padding: 40px;
     }
   }
-  
+
   .c-card{
     background-color: rgba(#777, 0.3);
     margin-top: 30px;
     padding: 40px;
-    
+
     &:first-child{
       margin-top: 0;
     }
-    
+
     span{
       display: block;
       width: 40px;
@@ -102,7 +109,7 @@ $yellow-c: #f2c100;
           padding: 15px 0;
           i{
             margin-right: 10px;
-          } 
+          }
         }
       }
       .c-tags{
@@ -163,6 +170,11 @@ $yellow-c: #f2c100;
   }
 }
 
+footer .c-copyright a {
+  margin: 0 10px;
+  color: #c5b96b;
+}
+
 @media (max-width: $screen-sm-max) { /* 991px */
   .course-content .c-more {
     display: block;
@@ -172,7 +184,7 @@ $yellow-c: #f2c100;
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .feature-content{
     >.container-fluid{
       display: table;

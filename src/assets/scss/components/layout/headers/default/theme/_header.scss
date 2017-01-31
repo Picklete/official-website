@@ -2,31 +2,31 @@
 
 @media (min-width: $screen-md-min) { /* 992px */
 	// Base header
-	.c-layout-header.c-layout-header-#{$header_class} { 
-		background: $header_desktop-bg-color; 
+	.c-layout-header.c-layout-header-#{$header_class} {
+		background: $header_desktop-bg-color;
 		border-bottom: $header_desktop_border;
 
 		//	Navbar
 		.c-navbar {
-			background: $header_desktop-navbar-bg;  
+			background: $header_desktop-navbar-bg;
 
 			// Main markup
 			.c-mega-menu {
-				> .nav.navbar-nav {				
+				> .nav.navbar-nav {
 					> li {
 
 						> .c-btn-icon,
 						> .c-link {
-							color: $mega-menu_desktop_primary-link-font-color; 
+							color: $mega-menu_desktop_primary-link-font-color;
 
 							&:hover,
 							&:focus {
-								color: $mega-menu_desktop_primary-link-font-color; 
+								color: $mega-menu_desktop_primary-link-font-color;
 							}
 						}
 
 						> .c-quick-sidebar-toggler {
-							> .c-line { 
+							> .c-line {
 								background-color: lighten($mega-menu_desktop_primary-link-font-color, 5%);
 							}
 						}
@@ -43,30 +43,30 @@
 									background: $mega-menu_desktop_primary-link-font-color-on-hover;
 								}
 							}
-						}  
+						}
 
 						&.c-active {
 							color: $mega-menu_desktop_primary-link-font-color-on-active;
-								
+
 							> a:not(.btn) {
 								color: $mega-menu_desktop_primary-link-font-color-on-active;
-							}		
+							}
 
 							> button {
 								> .c-line {
 									background: $mega-menu_desktop_primary-link-font-color-on-hover;
 								}
 							}
-						}	
+						}
 					}
-				}      	
+				}
 			}
 		}
 
 		// Quick search
 		.c-quick-search {
 			> .form-control {
-				@include placeholder($quick-search_desktop_input-placeholder-color);  
+				@include placeholder($quick-search_desktop_input-placeholder-color);
 				color: $quick-search_desktop_input-font-color;
 			}
 
@@ -77,35 +77,35 @@
 		}
 
 	}
-	
+
 	.c-page-on-scroll .c-layout-header.c-layout-header-#{$header_class} {
 		background: $mega-menu_desktop_min-header-bg-color;
 		border-bottom: $header_min_desktop_border;
-		box-shadow: $header_min_desktop_shadow; 
+		box-shadow: $header_min_desktop_shadow;
 
 		//	Topbar
 		.c-navbar {
 
 			.c-mega-menu {
-				> .nav.navbar-nav {				
+				> .nav.navbar-nav {
 					> li {
 						> .c-btn-icon,
 						> .c-link {
-							color: $mega-menu_desktop_min-header-primary-link-font-color; 
+							color: $mega-menu_desktop_min-header-primary-link-font-color;
 
 							&:hover,
 							&:focus {
-								color: $mega-menu_desktop_min-header-primary-link-font-color; 
+								color: $mega-menu_desktop_min-header-primary-link-font-color;
 							}
 						}
 
 						> .c-quick-sidebar-toggler {
-							> .c-line { 
+							> .c-line {
 								background-color: lighten($mega-menu_desktop_min-header-primary-link-font-color, 5%);
 							}
 						}
 					}
-				}      	
+				}
 			}
 		}
 	}
