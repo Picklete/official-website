@@ -1,6 +1,15 @@
-body {
-  // background-image: url('../images/picklete/background.jpg');
-}
+$green-1: #52c9ba;
+$green-2: #5dc09c;
+$green-3: #84c68f;
+
+$yellow-1: #FF6B57;
+$yellow-2: #c8d046;
+$yellow-3: #c5bf66;
+$yellow-4: #c5b96b;
+
+$purple-1: #a962bb;
+$purple-2: #aa67a3;
+$purple-3: #ac3773;
 
 .main {
   &.cover {
@@ -104,8 +113,7 @@ body {
 }
 
 #features {
-  background-color: white;
-  // margin-top: -60px;
+  background: linear-gradient(to bottom, rgba(251, 251, 252, 0.8), rgba(253, 247, 242, 0.8));
   text-align: center;
   height: 100%;
 
@@ -163,7 +171,27 @@ body {
       font-size: 20px;
       border-radius: 25px;
       padding: 10px;
+    }
 
+    .green-1 { border-color: $green-1; color: $green-1; }
+    .green-2 { border-color: $green-2; color: $green-2; }
+    .green-3 { border-color: $green-3; color: $green-3; }
+    .purple-1 { border-color: $purple-1; color: $purple-1; }
+    .purple-2 { border-color: $purple-2; color: $purple-2; }
+    .purple-3 { border-color: $purple-3; color: $purple-3; }
+    .yellow-1 { border-color: $yellow-1; color: $yellow-1; }
+    .yellow-2 { border-color: $yellow-2; color: $yellow-2; }
+    .yellow-3 { border-color: $yellow-3; color: $yellow-3; }
+    .yellow-4 { border-color: $yellow-4; color: $yellow-4; }
+  }
+
+  & + .feature-detail-list {
+    background: linear-gradient(to bottom, rgba(251, 251, 252, 0.8), rgba(253, 247, 242, 0.8));
+    margin-bottom: 20px;
+
+    .intro-detail {
+      border: 1px solid;
+      min-height: 120px;
     }
   }
 }
@@ -220,6 +248,7 @@ body {
     border-radius: 5px;
     background-color: rgba(255,255,255,0.7);
     cursor: pointer;
+    z-index: 99999;
   }
 }
 
