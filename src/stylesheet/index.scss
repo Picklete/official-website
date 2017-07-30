@@ -258,7 +258,15 @@ $purple-3: #ac3773;
   border: none;
   padding: 0 10px;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  #features {
+    .cross-left ,.cross-right {
+      display: none;
+    }
 
+    .special-marketing {
+      margin-top: 0;
+    }
+  }
 }
 

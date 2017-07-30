@@ -8,7 +8,8 @@
     "build": "./node_modules/.bin/webpack --config webpack.dev.config.js --progress",
     "watch": "./node_modules/.bin/webpack --config webpack.dev.config.js --watch",
     "devServer": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --open",
-    "buildProd": "rm -rf build && ./node_modules/.bin/webpack -p --config webpack.prod.config.js --progress && npm run devServer"
+    "buildProd": "rm -rf build && ./node_modules/.bin/webpack -p --config webpack.prod.config.js --progress",
+    "prodServer": "npm run buildProd && npm run devServer"
   },
   "keywords": [
     "E-commerce",
