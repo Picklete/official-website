@@ -1,0 +1,20 @@
+extends ../generic/_layout
+
+block prepend header
+  .main.cover
+
+block content
+  .leading
+    .content
+      .info
+        h1 PickLete・電商架站千層派
+
+        div
+          a.btn.btn-default.about-me-btn(role='button' data-toggle='collapse' href='#about-me-collapse' aria-expanded='false' aria-controls='about-me-collapse') 關於 PickLete
+          a.btn.btn-default.apply-trial-btn(href='/apply_trial.html') 立即申請試用
+
+        #about-me-collapse.collapse.about-me-content
+          .well
+            include ../partials/_about
+
+  include ../partials/_feature

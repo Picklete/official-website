@@ -1,0 +1,22 @@
+header#header.container-fluid.navbar.navbar-default.navbar-static-top
+  .navbar-header
+    img.logo(src=require("../../images/picklete/logo.png"))
+
+    button.navbar-toggle.collapsed(data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+      span.sr-only
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+
+  #navbar.navbar-collapse.collapse.navbar-right(aria-expanded='false')
+    ul.nav.navbar-nav
+      li
+        a.btn.btn-link.active(href='/') 首頁
+      //- li
+      //-   a.btn.btn-link(href='#about-me-collapse') 關於 PickLete
+      li
+        a.btn.btn-link(href='/intro.html') 特色
+      li
+        a.btn.btn-link(href='/customer_story.html') 客戶案例
+      li
+        a.btn.btn-link(href='/apply_trial.html') 試用申請

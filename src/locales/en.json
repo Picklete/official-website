@@ -1,0 +1,48 @@
+{
+  "title": "Picklete - eCommerce for full function and open source",
+  "menu": {
+    "index": "Home",
+    "intro": "Introduction",
+    "feature": "exclusive features",
+    "contact": "contact me"
+  },
+  "index": {
+    "title": "Build the network brand tool",
+    "button": "Get to know"
+  },
+  "intro": {
+    "title": "Complete electronic business system",
+    "description": "For small and medium-sized customers exclusive e-commerce system, through the layers of the module to create a complete electricity business system, small business large revenue, improve the checkout rate weapon.From now on, through Picklete, Create self-brand Loyal customers, increase user interaction, and create higher revenue. ",
+    "items": [{
+      "title": "Small shop gospel",
+      "content": "Provide a variety of preferential programs for small and medium customers, shop the first step is to use Picklete electronic business system, create a brand-name website."
+    }, {
+      "title": "Multi-payment system",
+      "content": "Exclusive offline payments, combined with third-party payment flow, allowing users to browse all the way to complete the payment to improve the turnover rate."
+    }, {
+      "title": "Time-saving is a good helper",
+      "content": "Easy to build the official website, blog, electricity business shopping, the Trinity zero time, immediately on the line."
+    }]
+  },
+  "feature": {
+    "title": "Almighty shopping cart features",
+    "items": [{
+      "hoverName": "Picklete shelves",
+      "title": "All-round electronic business function",
+      "content": "From the order management to marketing module, a complete combination of e - commerce features to meet all the needs of Taiwan 's sellers shop."
+    }, {
+      "hoverName": "Picklete Easy Layout",
+      "title": "UX team to create easy-to-use layout",
+      "content": "To build even the elderly can easily buy the interface to improve the turnover rate and return rate, easy to brand the first step."
+    }, {
+      "hoverName": "Picklete intimate program",
+      "title": "Integration of multiple financial and offline payments",
+      "content": "Exclusive offline payments and financial integration, small shops can easily become a network brand."
+    }]
+  },
+  "contact": {
+    "title": "Please contact me",
+    "emailPlaceholder": "Please enter the e-mail contact",
+    "button": "Contact me"
+  }
+}

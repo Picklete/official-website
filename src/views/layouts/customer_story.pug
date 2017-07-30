@@ -1,0 +1,17 @@
+extends ../generic/_layout
+
+block prepend header
+  .main.cover
+
+block content
+  .customer-story
+    h1 客戶案例
+    .row.container-fluid
+      .col-xs-12.col-sm-6.col-md-4
+        img(src=require('../../images/customer_story/ideal.png') title='i Deal')
+      .col-xs-12.col-sm-6.col-md-4
+        img(src=require('../../images/customer_story/aura.png') title='Aura')
+      .col-xs-12.col-sm-6.col-md-4
+        img(src=require('../../images/customer_story/hikari.png') title='Hikari')
+      .col-xs-12.col-sm-6.col-md-4
+        img(src=require('../../images/customer_story/mdna.png') title='MDNA')

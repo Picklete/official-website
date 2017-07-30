@@ -1,0 +1,44 @@
+- var contactMe = 'we@exma-square.co';
+- var copyrightCompany = 'EXMA-square.co'
+
+footer#footer.container-fluid
+  .row
+    .col-sm-4.hidden-xs
+      .logo.exma-square
+      .logo.picklete
+      .logo-slogan
+        p 行銷整合利器
+        p 官網，電商，行銷
+        p 一次到位，讓業績一飛沖天
+      .clearfix
+
+    .col-xs-12.col-sm-8
+      .row
+        .col-xs-12.col-sm-4
+        .col-xs-12.col-sm-4
+          h4.title PickLete
+          ul.menu
+            li
+              a(href='/') 首頁
+            li
+              a(href='/intro.html') 特色
+            li
+              a(href='#joinus') 客戶案例
+            li
+              a(href='/apply_trial.html') 試用申請
+
+        .col-xs-12.col-sm-4
+          h4.title 聯絡資訊
+          ul.menu
+            li
+              a(href='mailto:' + contactMe) #{contactMe}
+
+  .row
+    .col-sm-12.copyright
+        - var currentYear = new Date().getFullYear();
+        span Copyright &copy; #{currentYear}
+        a(href='http://'+ copyrightCompany, target='_blank' title=copyrightCompany)  #{copyrightCompany}
+        span  保留一切權利
+
+  a.back-top(href='javascript:backBrowserTop();')
+    i.fa.fa-arrow-up

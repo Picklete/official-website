@@ -1,0 +1,32 @@
+- var title = 'PickLete - eCommerce';
+- var description = '電子商務，全功能平台，第三方支付串接，獨家金流功能，中小型企業唯一選擇';
+- var mainUrl = 'http://picklete.com/';
+- var coverImageUrl = mainUrl + 'images/cover.jpg';
+- var author = 'EXMA-square.co';
+
+title #{title}
+
+//- Setting HTML Meta tags
+meta(http-equiv='Content-type', content='text/html; charset=utf-8')
+meta(name='viewport', content='width=device-width, initial-scale=1.0')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='keywords', content='picklete, ec, e-commerce, shopping, b2c')
+meta(name='author', content=author)
+meta(name='copyright', content=author)
+
+//- Setting SEO meta tags
+meta(itemprop='name', content=title)
+meta(itemprop='description', content=description)
+meta(itemprop='image', content=coverImageUrl)
+
+//- Setting og (The Open Graph protocol)
+meta(property='og:type', content='website')
+meta(property='og:title', content=title)
+meta(property='og:description', content=description)
+meta(property='og:image', content=coverImageUrl)
+meta(property='og:url', content=mainUrl)
+meta(property='og:site_name', content=author)
+link(rel='image_src' href=coverImageUrl type='image/jpeg')
+
+//- Setting Tab icon on Browser
+link(rel='shortcut icon' type='image/png' href=require("../../images/picklete/logo.png"))
